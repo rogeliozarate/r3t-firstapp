@@ -54,3 +54,4 @@ RVM ask to use the rail's RVM or mine. I kept mine.
 >2. In the [remote "origin"] section 
 >>     set url = ssh://git@github.com/username/repo.gits
 
+Now the app lives at [github](https://github.com/rogeliozarate/r3t-firstapp) and runs at [heroku](vhgfckml.herokuapp.com)

@@ -34,14 +34,20 @@ Using:
 - Ruby, ruby 1.9.3p327 (2012-11-10 revision 37606) [x86_64-darwin12.2.0]
 - RVM, rvm 1.17.0 
 
-I decided to install Rails using *bundler*
+-I decided to install Rails using *bundler*.-
+Not a good idea, set up is tangled this way.
+Installed Rails with 
+
+     $sudo gem install rails
+
 
 - After running 
     rails new first_app
 
 RVM ask to use the rail's RVM or mine. I kept mine.
 
-- I had to install 'sqlite2-ruby' gem, specific for OS X.
+- No need to install sqlite-ruby, already in sqlite3 gem.
+
 - Github asking for username and password every push [fixed with](http://stackoverflow.com/questions/7773181/git-keeps-prompting-me-for-password):
 
 >1. Open .git/config 

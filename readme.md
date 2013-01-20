@@ -72,4 +72,6 @@ Now the app lives at [github](https://github.com/rogeliozarate/r3t-firstapp) and
 ### Chapter 2
 
 - I will be working over the previous app. No real need to create a new one.
-
+- I have to pay attention to singular and plural nouns.
+- the development records is not migrated to the production database
+- After deploying to Heroku it is necessary to migrate the database

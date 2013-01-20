@@ -50,7 +50,26 @@ RVM ask to use the rail's RVM or mine. I kept mine.
 
 - Github asking for username and password every push [fixed with](http://stackoverflow.com/questions/7773181/git-keeps-prompting-me-for-password):
 
->1. Open .git/config 
->2. In the [remote "origin"] section 
->>     set url = ssh://git@github.com/username/repo.gits
+>Open .git/config 
+
+>In the [remote "origin"] section
+ 
+    url = ssh://git@github.com/username/repo.gits
+
+- The Gemfile must be modified in order to deploy to Heroku:
+
+    group :development, :test do
+      gem 'sqlite3'
+    end
+    group :production do
+     gem 'pg'
+    end
+
+Heroku uses Postgres instead of sqlite3.
+
+Now the app lives at [github](https://github.com/rogeliozarate/r3t-firstapp) and runs at [heroku](vhgfckml.herokuapp.com)
+
+### Chapter 2
+
+- I will be working over the previous app. No real need to create a new one.
 

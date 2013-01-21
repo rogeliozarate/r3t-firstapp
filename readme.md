@@ -99,3 +99,24 @@ This is a 'remembered' option. Next time I use this command it will remember the
 
        $rails generate rspec:install
 
+- It's the pracatice to generate a controller for each page, like
+
+    rails generate controller StaticPages home help --no-test-framework
+
+the option --no-test-framework to suppress the generation of the default RSpec tests, which we won’t be using.
+Note the CamelCased name, it works identically with 'static_pages' (snake_cased).
+
+- If something goes wrong you can:
+
+      $ rails generate controller FooBars 
+      $ rails destroy  controller FooBars 
+
+also
+
+      $ rake db:migrate
+      $ rake db:rollback
+or
+      $ rake db:migrate VERSION=0
+
+versions are numerated from zero and up in each migration.
+

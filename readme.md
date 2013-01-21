@@ -75,3 +75,27 @@ Now the app lives at [github](https://github.com/rogeliozarate/r3t-firstapp) and
 - I have to pay attention to singular and plural nouns.
 - the development records is not migrated to the production database
 - After deploying to Heroku it is necessary to migrate the database
+
+### Chapter 3
+
+- Gems required for testing
+
+      group :development, :test do
+        gem 'sqlite3', '1.3.5'
+        gem 'rspec-rails', '2.11.0'
+      end
+
+      group :test do
+        gem 'capybara', '1.1.2'
+      end
+
+- It's a time saver to run bundle install without production
+
+       $ bundle install - -without production
+
+This is a 'remembered' option. Next time I use this command it will remember the option.
+
+- to configure Rails to run Rspec testing (Generates /spec directory):
+
+       $rails generate rspec:install
+

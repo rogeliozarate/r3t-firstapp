@@ -10,6 +10,10 @@ require 'rspec/autorun'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
+  
+  # 'visit' method is broken fixe with
+  # http://stackoverflow.com/questions/8862967/visit-method-not-found-in-my-rspec
+  
   config.include Capybara::DSL
   # ## Mock Framework
   #

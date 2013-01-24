@@ -9,6 +9,9 @@ gem 'jquery-rails'
 group :development,:test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
@@ -17,6 +20,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'rb-fsevent'
+  gem 'growl'
 end
 
 

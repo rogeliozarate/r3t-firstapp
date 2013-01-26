@@ -120,3 +120,20 @@ or
 
 versions are numerated from zero and up in each migration.
 
+- I got this error message from Rspec:
+
+1) Static pages Home page should have the content 'Sample App'
+     Failure/Error: visit '/static_pages/home'
+     NoMethodError:
+       undefined method `visit' for #<RSpec::Core::ExampleGroup::Nested_1::Nested_1:0x007fb17dd795c0>
+     # ./spec/requests/static_pages_spec.rb:6:in `block (3 levels) in <top (required)>'
+	
+This is an issue in [rspec-rails](https://github.com/rspec/rspec-rails/issues/360)
+
+It is fixed with: [stackoverflow](http://stackoverflow.com/questions/8862967/visit-method-not-found-in-my-rspec)
+
+config.include Capybara::DSL
+
+in spec_helper.rb, inside the config block.
+
+	
